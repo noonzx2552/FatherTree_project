@@ -5,11 +5,11 @@ import requests
 
 def send_line_notify(message, token):
     line_notify_api = "https://notify-api.line.me/api/notify"
-    headers = {"Authorization": "Bearer " + "GhrQVIIMDSOCoUYua07FSXRvgyIA07SHDhn@cqcsX"}
+    headers = {"Authorization": "Bearer " + "token"}
     data = {"message": message}
     requests.post(line_notify_api, headers=headers, data=data)
 
-line_notify_token = "GhrQVIIMDSOCoUYua07FSXRvgyIA07SHDhn@cqcsX"
+line_notify_token = "token"
 
 pump = LED(27)
 sensor = Button(4)
